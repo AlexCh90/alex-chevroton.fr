@@ -1,0 +1,19 @@
+$color-ontop: #30525b;
+$color-notontop: rgba(225,236,239,0.5);
+
+.banner{
+    display: block;
+    position: absolute;
+}
+
+.ontop{
+    z-index: 5;
+    background-color: $color-ontop;
+    transition-duration: 500ms;
+}
+
+.notontop{
+    z-index: 5;
+    background: $color-notontop;
+    transition-duration: 500ms;
+}

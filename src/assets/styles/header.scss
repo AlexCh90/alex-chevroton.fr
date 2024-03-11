@@ -1,0 +1,21 @@
+.header{
+    display: block;
+    position: relative;
+    color: #ffffff;
+}
+
+.shown-header{
+    z-index: 5;
+    visibility: visible;
+    opacity: 1;
+
+    transition-duration: 1s;
+}
+
+.hidden-header{
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: visibility 0.33s linear 0.33s, opacity 0.33s linear;
+}
