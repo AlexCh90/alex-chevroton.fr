@@ -19,24 +19,13 @@ const Header = () =>{
     })
 
     return(
-        <div id="accueil" className={header ? " container header hidden-header" : "container header shown-header"}>
-            <div className="container row">
-                <div className="col-1 align-items-start">
-                    LinkedIn
+        <div id="accueil" className={header ? "header hidden-header" : "header shown-header"}>
+            <div className="row align-items-center">
+                <div className="col-xxl-8 col-md-7 align-items-center">
+                    LinkedIn Facebook Instagram
                 </div>
-                <div className="col-1 align-items-start">
-                    Facebook
-                </div>
-                <div className="col-1 align-items-start">
-                    Instagram
-                </div>
-                <div className="col-5 align-items-start">
-                </div>
-                <div className="col-2 align-items-end">
-                    (+33) 7 77 75 21 50
-                </div>
-                <div className="col-2 align-items-end">
-                    contact@alex-chevroton.fr
+                <div className="col-xxl-4 col-md-5 align-items-end">
+                    📞 (+33) 7.77.75.21.50 ✉️ contact@alex-chevroton.fr
                 </div>
             </div>
         </div>

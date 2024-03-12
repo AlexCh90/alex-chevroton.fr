@@ -1,0 +1,20 @@
+#fond{
+    top: 0;
+    max-width: 100%;
+    height: 1946px;
+    width: 100%;
+    background-image: url("../images/chat1.jpg");
+}
+
+.background {
+    display: block;
+    overflow: hidden;
+    z-index: 0;
+    max-width: 100%;
+}
+
+.background-image {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

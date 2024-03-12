@@ -1,11 +1,12 @@
 .header{
-    display: block;
+    width: 100%;
     position: relative;
     color: #ffffff;
+    z-index: 5;
+    margin: 0.5%;
 }
 
 .shown-header{
-    z-index: 5;
     visibility: visible;
     opacity: 1;
 
@@ -13,9 +14,9 @@
 }
 
 .hidden-header{
-    z-index: 5;
     visibility: hidden;
     opacity: 0;
+    height: 0;
 
     transition: visibility 0.33s linear 0.33s, opacity 0.33s linear;
 }

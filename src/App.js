@@ -1,15 +1,15 @@
 import './assets/styles/App.scss';
 import Header from "./components/Header";
+import Accueil from  "./pages/Accueil";
 import Banner from "./components/Banner";
-import Carousel from  "./components/Carousel";
 import Body from "./pages/Body";
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
+      <Accueil></Accueil>
       <Banner></Banner>
-      <Carousel></Carousel>
       <Body></Body>
     </div>
   );

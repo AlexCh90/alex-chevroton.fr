@@ -1,19 +1,21 @@
-$color-ontop: #30525b;
-$color-notontop: rgba(225,236,239,0.5);
+$cyanfonce: #30525b;
+$cyanclair: rgb(225,236,239);
 
 .banner{
     display: block;
-    position: absolute;
+    position: relative;
+    z-index: 5;
 }
 
 .ontop{
-    z-index: 5;
-    background-color: $color-ontop;
-    transition-duration: 500ms;
+    background-color: $cyanfonce;
+    color: $cyanclair;
+    transition-duration: 0.33s;
 }
 
 .notontop{
-    z-index: 5;
-    background: $color-notontop;
-    transition-duration: 500ms;
+    background: $cyanclair;
+    color: $cyanfonce;
+    opacity: 0.5;
+    transition-duration: 0.33s;
 }
