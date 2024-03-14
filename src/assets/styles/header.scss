@@ -3,7 +3,8 @@
     position: relative;
     color: #ffffff;
     z-index: 5;
-    margin: 0.5%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
 }
 
 .shown-header{
@@ -16,7 +17,6 @@
 .hidden-header{
     visibility: hidden;
     opacity: 0;
-    height: 0;
 
     transition: visibility 0.33s linear 0.33s, opacity 0.33s linear;
 }
