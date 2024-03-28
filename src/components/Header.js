@@ -5,7 +5,7 @@ const Header = () =>{
     const [header, setNavbar] = useState(false)
     const hideHeader = () => {
         console.log(window.scrollY)
-        if (window.scrollY >= 50) {
+        if (window.scrollY >= 100) {
             setNavbar(true)
         } else {
             setNavbar(false)
@@ -19,13 +19,20 @@ const Header = () =>{
     })
 
     return(
-        <div id="accueil" className={header ? "header hidden-header" : "header shown-header"}>
-            <div className="row align-items-center">
-                <div className="col-xxl-8 col-md-7 align-items-center">
-                    LinkedIn Facebook Instagram
+        <div id="accueil" className={header ? "container header hidden-header" : "container header shown-header"}>
+            <div className="row">
+                <div className="col-md-4">
+                    <ul className="list-inline">
+                        <li className="list-inline-item"><i className="bi bi-linkedin"></i></li>
+                        <li className="list-inline-item"><i className="bi bi-facebook"></i></li>
+                        <li className="list-inline-item"><i className="bi bi-instagram"></i></li>
+                    </ul>
                 </div>
-                <div className="col-xxl-4 col-md-5 align-items-end">
-                    📞 (+33) 7.77.75.21.50 ✉️ contact@alex-chevroton.fr
+                <div className="col-md-3 offset-md-3"></div>
+                <div className="col-md-4">
+                    <p className="justify-content-end">
+                        📞 (+33) 7.77.75.21.50 ✉️ contact@alex-chevroton.fr
+                    </p>
                 </div>
             </div>
         </div>

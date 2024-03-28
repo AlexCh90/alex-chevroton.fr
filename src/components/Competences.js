@@ -2,7 +2,7 @@ import "../assets/styles/comptences.scss"
 
 function Competences () {
     return (
-        <div id="competences" className="paragraph">
+        <section id="competences" className="paragraph">
             <div className="container">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis pharetra mauris. Phasellus suscipit at ex sit amet consectetur.
@@ -37,7 +37,7 @@ function Competences () {
                     leo nunc consequat nibh, imperdiet tempus mi orci in lectus. Nullam quis dolor rutrum, convallis sem ac, consectetur magna.
                 </p>
             </div>
-        </div>
+        </section>
     )
 }
 

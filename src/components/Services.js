@@ -2,7 +2,7 @@ import "../assets/styles/services.scss"
 
 function Services (){
     return(
-        <div id="services">
+        <section id="services">
             <div className="container-fluid">
                 <div className="row gap-2">
                     <div className="card col-3">
@@ -55,7 +55,7 @@ function Services (){
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
