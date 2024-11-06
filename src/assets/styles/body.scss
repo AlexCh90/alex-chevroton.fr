@@ -4,8 +4,13 @@
     bottom: 0;
     width: 100%;
     color: #ffffff;
-    display: block;
-    overflow: hidden;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 3;
 }
 
 #content-wrap {

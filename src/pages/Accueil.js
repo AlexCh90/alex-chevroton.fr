@@ -4,7 +4,7 @@ import chat2 from "../assets/images/chat2.jpg"
 
 function Accueil (){
     return (
-        <section id="carouselExampleSlidesOnly" className="carousel slide fondentete d-none d-lg-block" data-bs-ride="carousel">
+        <section id="carouselExampleSlidesOnly" className="carousel slide fondentete" data-bs-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active" data-bs-interval="10000">
                     <img src={chat1} className="carouselimage" alt="chat1"/>
