@@ -4,13 +4,8 @@
     bottom: 0;
     width: 100%;
     color: #ffffff;
-}
-
-#page-container {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    z-index: 3;
+    display: block;
+    overflow: hidden;
 }
 
 #content-wrap {

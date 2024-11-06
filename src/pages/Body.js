@@ -6,7 +6,6 @@ import Competences from "../components/Competences";
 function Body (){
     return(
         <div className="body">
-            <div id="page-container"></div>
             <Services></Services>
             <Competences></Competences>
             <Footer></Footer>
