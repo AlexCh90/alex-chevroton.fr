@@ -1,7 +1,11 @@
-.App {
-  width: 100%;
+html {
+  scroll-behavior: smooth;
 }
 
-.paragraph{
-  text-align: justify;
+.App {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; // Évite le débordement horizontal
+  box-sizing: border-box;
+  width: 100%;
 }

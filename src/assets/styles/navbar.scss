@@ -1,0 +1,35 @@
+.navbar-custom {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &.scrolled {
+    position: fixed;
+    top: 0;
+    background-color: #343a40;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-link {
+    color: white;
+    margin-left: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.navbar-logo-img {
+  height: 40px;
+  transition: all 0.3s ease;
+}

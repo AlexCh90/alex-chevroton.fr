@@ -1,22 +1,42 @@
-.header{
-    width: 100%;
-    position: relative;
-    color: #ffffff;
-    z-index: 5;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
-}
+.header-top {
+  color: white;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  font-size: 0.9rem;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 
-.shown-header{
-    visibility: visible;
-    opacity: 1;
-
-    transition-duration: 1s;
-}
-
-.hidden-header{
-    visibility: hidden;
+  &.hidden {
     opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+  }
 
-    transition: visibility 0.33s linear 0.33s, opacity 0.33s linear;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      text-align: center;
+      .socials {
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+
+  .socials a {
+    margin-right: 1rem;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

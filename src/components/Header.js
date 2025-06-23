@@ -1,42 +1,21 @@
-import { useEffect, useState } from "react";
-import "../assets/styles//header.scss";
+import React from 'react';
+import '../assets/styles/header.scss';
 
-const Header = () =>{
-    const [header, setNavbar] = useState(false)
-    const hideHeader = () => {
-        console.log(window.scrollY)
-        if (window.scrollY >= 100) {
-            setNavbar(true)
-        } else {
-            setNavbar(false)
-        }
-    }
-
-    useEffect(() => {
-        hideHeader()
-        // adding the event when scroll change background
-        window.addEventListener("scroll", hideHeader)
-    })
-
-    return(
-        <div id="accueil" className={header ? "container header hidden-header" : "container header shown-header"}>
-            <div className="row">
-                <div className="col-md-4">
-                    <ul className="list-inline">
-                        <li className="list-inline-item"><i className="bi bi-linkedin"></i></li>
-                        <li className="list-inline-item"><i className="bi bi-facebook"></i></li>
-                        <li className="list-inline-item"><i className="bi bi-instagram"></i></li>
-                    </ul>
-                </div>
-                <div className="col-md-3 offset-md-3"></div>
-                <div className="col-md-4">
-                    <p className="justify-content-end">
-                        📞 (+33) 7.77.75.21.50 ✉️ contact@alex-chevroton.fr
-                    </p>
-                </div>
-            </div>
+const Header = ({ hidden }) => {
+  return (
+    <div className={`header-top ${hidden ? 'hidden' : ''}`}>
+        <div className="container" id="top">
+              <div className="socials">
+                  <a href="#">FB</a>
+                  <a href="#">TW</a>
+                  <a href="#">IG</a>
+              </div>
+              <div className="contact">
+                  📞 01 23 45 67 89 &nbsp; | &nbsp; ✉️ contact@monsite.com
+              </div>
         </div>
-    )
-}
+    </div>
+  );
+};
 
-export default Header
+export default Header;

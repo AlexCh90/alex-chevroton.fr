@@ -1,0 +1,31 @@
+.section {
+    width: 100vw;
+    margin: 0;
+    padding: 5rem 0;
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+.section-dark {
+  background-color: #30525B;
+  color: white;
+}
+
+.section-light {
+  background-color: #E1ECEF;
+  color: #1e1e1e;
+}
