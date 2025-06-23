@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="footer-container">
-        <p>&copy; {new Date().getFullYear()} MonSite. Tous droits réservés.</p>
+        <p>&copy; {new Date().getFullYear()} Alex Chevroton. Tous droits réservés.</p>
         <div className="footer-links">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
