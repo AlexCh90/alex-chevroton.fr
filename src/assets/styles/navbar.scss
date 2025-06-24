@@ -1,38 +1,50 @@
-.navbar-custom {
-  position: absolute;
-  top: 40px;
+.navbar {
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
+  padding: 0.75rem 1rem;
   width: 100%;
-  z-index: 1000;
-  padding: 0.5rem 0;
-  transition: all 0.3s ease;
+  z-index: 999;
 
-  background-color: rgba(225, 236, 239, 0.6); // #E1ECEF avec transparence
-  color: #30525B;
-  backdrop-filter: blur(8px); // pour un bel effet "frosted glass" (optionnel)
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  &.scrolled {
-    position: fixed;
-    top: 0;
-    background-color: #30525B;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  .navbar-logo-img {
+    height: 40px;
+    transition: all 0.3s ease;
   }
 
   .nav-link {
-    color: white;
-    margin-left: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin: 0 1rem; // ✅ Ajoute de l’espacement horizontal ici
+  }
 
-    &:hover {
-      text-decoration: underline;
+  &.absolute-top {
+    position: absolute;
+    top: 60px; // ajustable selon la hauteur de ton header
+  }
+
+  &.navbar-top {
+    background-color: rgba(225, 236, 239, 0.85); // semi-transparent
+    backdrop-filter: blur(8px);
+
+    .nav-link {
+      color: #30525B !important;
+
+      &:hover {
+        color: #203a3f !important;
+      }
     }
   }
-}
 
-.navbar-logo-img {
-  height: 40px;
-  transition: all 0.3s ease;
+  &.navbar-scrolled {
+    position: fixed;
+    top: 0;
+    background-color: #30525B !important;
+
+    .nav-link {
+      color: #E1ECEF !important;
+
+      &:hover {
+        color: #ffffff !important;
+      }
+    }
+  }
 }

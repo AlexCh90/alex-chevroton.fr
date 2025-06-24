@@ -1,42 +1,32 @@
-.header-top {
-  color: white;
-  padding: 0.5rem 1rem;
-  position: fixed;
+.top-header {
+  position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1001;
+  background-color: transparent;
+  padding: 0.4rem 1rem;
   font-size: 0.9rem;
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 1001;
+  transition: top 0.3s ease, opacity 0.3s ease;
+
+  .social-icons a {
+    color: #E1ECEF;
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #203a3f;
+    }
+  }
+
+  .contact-info span {
+    margin-left: 1rem;
+    color: #E1ECEF;
+  }
 
   &.hidden {
     opacity: 0;
-    transform: translateY(-100%);
     pointer-events: none;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @media (max-width: 576px) {
-      flex-direction: column;
-      text-align: center;
-      .socials {
-        margin-bottom: 0.25rem;
-      }
-    }
-  }
-
-  .socials a {
-    margin-right: 1rem;
-    color: white;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    transform: translateY(-100%);
   }
 }

@@ -1,21 +1,40 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../assets/styles/header.scss';
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
-const Header = ({ hidden }) => {
+const Header = () => {
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHidden(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className={`header-top ${hidden ? 'hidden' : ''}`}>
-        <div className="container" id="top">
-              <div className="socials">
-                  <a href="#">FB</a>
-                  <a href="#">TW</a>
-                  <a href="#">IG</a>
-              </div>
-              <div className="contact">
-                  📞 01 23 45 67 89 &nbsp; | &nbsp; ✉️ contact@monsite.com
-              </div>
+    <header className={`top-header ${hidden ? 'hidden' : ''}`}>
+        <div className="container d-flex justify-content-between align-items-center">
+          <div className="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              <FaFacebookF />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+              <FaTwitter />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+              <FaLinkedinIn />
+            </a>
+          </div>
+          <div className="contact-info">
+            <span>📞 06 12 34 56 78</span>
+            <span>📧 contact@monsite.com</span>
+          </div>
         </div>
-    </div>
-  );
-};
+      </header>
+    );
+  };
 
-export default Header;
+  export default Header;
