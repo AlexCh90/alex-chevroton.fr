@@ -11,6 +11,10 @@ const images = [
 const Carousel = () => {
   return (
     <div className="carousel-background">
+      <div className="carousel-header">
+        <h1 className="carousel-title">Alex Chevroton</h1>
+        <h2 className="carousel-subtitle">Développeur web indépendant</h2>
+      </div>
       <div id="carouselExample" className="carousel slide carousel-fade h-100" data-bs-ride="carousel">
         <div className="carousel-inner h-100">
           {images.map((src, index) => (
