@@ -24,7 +24,7 @@ const Header = () => {
             <a href="https://twitter.com" target="_blank" rel="noreferrer">
               <FaTwitter />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/alex-chevroton/" target="_blank" rel="noreferrer">
               <FaLinkedinIn />
             </a>
           </div>

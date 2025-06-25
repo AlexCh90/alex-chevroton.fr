@@ -18,20 +18,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #E1ECEF;
+    color: #30525B;
     z-index: 10;
     padding: 1rem;
   }
 
   .carousel-title {
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: bold;
     margin-bottom: 1rem;
     animation: fadeIn 1s ease-in-out;
   }
 
   .carousel-subtitle {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-family: monospace;
     white-space: nowrap;
     overflow: hidden;
