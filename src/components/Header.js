@@ -29,8 +29,8 @@ const Header = () => {
             </a>
           </div>
           <div className="contact-info">
-            <span>📞 06 12 34 56 78</span>
-            <span>📧 contact@monsite.com</span>
+            <span>📞 07 77 75 21 50</span>
+            <span>📧 contact@alex-chevroton.fr</span>
           </div>
         </div>
       </header>
