@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import logoDark from '../assets/logos/logo-dark.png';
 import logoLight from '../assets/logos/logo-light.png';
+import logoDark from '../assets/logos/logo-dark.png';
 import '../assets/styles/navbar.scss';
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
     >
       <div className="container">
         <ScrollLink to="top" smooth duration={600} offset={-70} className="navbar-brand">
-          <img src={scrolled ? logoLight : logoDark} alt="Logo" className="navbar-logo-img"/>
+          <img src={scrolled ? logoDark : logoLight} alt="Logo" className="navbar-logo-img"/>
         </ScrollLink>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../assets/styles/header.scss';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const Header = () => {
   const [hidden, setHidden] = useState(false);
@@ -18,11 +18,11 @@ const Header = () => {
     <header className={`top-header ${hidden ? 'hidden' : ''}`}>
         <div className="container d-flex justify-content-between align-items-center">
           <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/alexchevroton" target="_blank" rel="noreferrer">
               <FaFacebookF />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              <FaTwitter />
+            <a href="https://www.instagram.com/alexchevroton_developpeurweb/" target="_blank" rel="noreferrer">
+              <FaInstagram />
             </a>
             <a href="https://www.linkedin.com/in/alex-chevroton/" target="_blank" rel="noreferrer">
               <FaLinkedinIn />
